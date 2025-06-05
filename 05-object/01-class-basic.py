@@ -3,8 +3,15 @@ class Person:
 	_age = None  # 受保护属性，单下划线开头，可以在类的内部、子类中访问
 	__price = None  # 私有属性，双下划线开头，只能在类的内部访问，子类不可访问
 
+	# 创建对象时，会调用new方法（是object中的静态方法），然后再调用init方法
+	# 详见 builtins.object.__new__
+	def __new__(cls, *args, **kwargs):
+		print("new")
+		return super().__new__(cls)
+
 	# 构造方法，在创建对象时调用
 	def __init__(self, name, age, price):
+		print("init")
 		self.name = name
 		self._age = age
 		self.__price = price
