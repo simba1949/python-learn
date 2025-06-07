@@ -14,7 +14,7 @@
 文件名.mode：返回文件的访问模式
 文件名.closed：检测文件是否关闭，关闭则返回 True
 """
-file_path = "./folder/file-1.txt"
+file_path = "folder/file-1.txt"
 file = open(file_path, encoding="utf-8")  # 打开文件
 print(file.name)  # 打印文件名
 print(file.mode)  # 打印文件访问模式
