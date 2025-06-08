@@ -4,8 +4,8 @@
 gevent
 1. gevent.spawn(函数名)：创建并启动新协程
 2. gevent.sleep()：非阻塞式休眠
-3。 gevent.join()：等待协程完成
-4。 gevent.joinall()：等待所有协程完成
+3. gevent.join()：等待协程完成
+4. gevent.joinall()：等待所有协程完成
 """
 import gevent
 from gevent import monkey
